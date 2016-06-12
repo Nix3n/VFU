@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">XViewer</string>
+    <string name="display_header">XViewer: Display</string>
+    <string name="graph_header">XViewer: Graph</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="drawer_opened">Drawer Opened</string>
+    <string name="drawer_closed">Drawer Closed</string>
+    <string name="channel1">Ch1</string>
+    <string name="channel2">Ch2</string>
+    <string name="channel3">Ch3</string>
+    <string name="Channel4">Ch4</string>
+    <string name="channel5">Ch5</string>
+    <string name="channel6">Ch6</string>
+    <string name="channel7">Ch7</string>
+    <string name="channel8">Ch8</string>
+    <string name="flow">Continuous flow</string>
+    <string name="setup">Setup</string>
+    <string name="logfile">Logfile</string>
+    <string name="beforeConnect">Connect to Bluetooth</string>
+    <string name="nbrOfChannels">Enter the number of Channels used:</string>
+    <string name="Channel1Image">Channel1</string>
+    <string name="TestString">ArrA</string>
+    <string name="Graph">Graph</string>
+    <string name="Display">Display</string>
+
+    <string name="color_prompt">Choose a color</string>
+
+    <string-array name="colors">
+        <item>Red</item>
+        <item>Green</item>
+        <item>Blue</item>
+        <item>Yellow</item>
+        <item>Magenta</item>
+        <item>Cyan</item>
+        <item>Brown</item>
+        <item>Orange</item>
+    </string-array>
+
+    <string name="set_mode">Choose a mode</string>
+
+    <string-array name="mode">
+        <item>Slave</item>
+        <item>Master</item>
+    </string-array>
+
+    <string name="set_logfile_mode">Choose a logfile mode</string>
+
+    <string-array name="logfile_mode">
+        <item>FIFO</item>
+        <item>Continuous growth</item>
+    </string-array>
+</resources>

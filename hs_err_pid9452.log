@@ -1,0 +1,54 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (malloc) failed to allocate 298496 bytes for Chunk::new
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   In 32 bit mode, the process size limit was hit
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Use 64 bit Java on a 64 bit OS
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (allocation.cpp:323), pid=9452, tid=9520
+#
+# JRE version: Java(TM) SE Runtime Environment (7.0_40-b43) (build 1.7.0_40-b43)
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (24.0-b56 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000000008b75000):  JavaThread "C2 CompilerThread1" daemon [_thread_in_native, id=9520, stack(0x000000000a6a0000,0x000000000a7a0000)]
+
+Stack: [0x000000000a6a0000,0x000000000a7a0000]
+
+Current CompileTask:
+C2:  11662  664             org.codehaus.groovy.reflection.CachedClass$3::initValue (264 bytes)
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x000000000ce4e000 JavaThread "File lock request listener" [_thread_in_native, id=9796, stack(0x000000000db30000,0x000000000dc30000)]
+  0x000000000b50f000 JavaThread "Stdin handler" [_thread_blocked, id=9708, stack(0x000000000c9e0000,0x000000000cae0000)]
+  0x000000000b500000 JavaThread "Daemon worker" [_thread_in_Java, id=9696, stack(0x000000000c890000,0x000000000c990000)]
+  0x000000000b4ff800 JavaThread "Cancel handler" [_thread_blocked, id=9692, stack(0x000000000c6c0000,0x000000000c7c0000)]
+  0x000000000b213000 JavaThread "Handler for socket connection from /127.0.0.1:53750 to /127.0.0.1:53752" [_thread_in_native, id=9688, stack(0x000000000c4b0000,0x000000000c5b0000)]
+  0x000000000b212800 JavaThread "Daemon" [_thread_blocked, id=9684, stack(0x000000000c000000,0x000000000c100000)]
+  0x000000000b264000 JavaThread "Incoming local TCP Connector on port 53750" [_thread_in_native, id=9660, stack(0x000000000c220000,0x000000000c320000)]
+  0x0000000008b76800 JavaThread "Service Thread" daemon [_thread_blocked, id=9524, stack(0x000000000a900000,0x000000000aa00000)]
+=>0x0000000008b75000 JavaThread "C2 CompilerThread1" daemon [_thread_in_native, id=9520, stack(0x000000000a6a0000,0x000000000a7a0000)]
+  0x0000000008b6f000 JavaThread "C2 CompilerThread0" daemon [_thread_in_native, id=9516, stack(0x000000000a4d0000,0x000000000a5d0000)]
+  0x0000000008b6e000 JavaThread "Attach Listener" daemon [_thread_blocked, id=9512, stack(0x000000000a2b0000,0x000000000a3b0000)]
+  0x0000000008b67000 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=9508, stack(0x0000000009ce0000,0x0000000009de0000)]
+  0x0000000008b17000 JavaThread "Finalizer" daemon [_thread_in_Java, id=9504, stack(0x000000000a080000,0x000000000a180000)]
+  0x0000000008b0c000 JavaThread "Reference Handler" daemon [_thread_in_native_trans, id=9500, stack(0x0000000009e80000,0x0000000009f80000)]
+  0x00000000021de800 JavaThread "main" [_thread_blocked, id=9476, stack(0x0000000002410000,0x0000000002510000)]
+
+Other Threads:
